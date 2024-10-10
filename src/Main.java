@@ -1,34 +1,46 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
 
-    private static String[] coffeeTypes = {"Americano", "Latte Macchiato", "Filterkaffee", "Cappuccino", "Espresso"};
-    private static double[] caffeineContent = {63.0, 11.0, 66.0, 27.0, 110.0};
-
     public static void main(String[] args) {
 
-        System.out.println("Welcome to the Coffee Yunkie Index!");
-        int cupAmount = cupInput();
-        int coffeeType = coffeeTypeInput();
+        CoffeeTypeSelector coffeeTypeSelector = new CoffeeTypeSelector();
+        CoffeeCupInputHandler coffeeCupInputHandler = new CoffeeCupInputHandler();
+
+        System.out.println("Welcome to the Coffee Junkie Index!");
+        System.out.println("-----------------------------------");
+        //get input from User
+        int cupAmount = coffeeCupInputHandler.getCupInput();
+        int[] coffeeCups = coffeeTypeSelector.coffeeTypeInput(cupAmount);
+
+        //berechne den Junkie Index → 1 to 10
+        System.out.println(".... Calculating Junkie Index ....");
+        int junkieIndex = calculateJunkieIndex(cupAmount, coffeeCups, coffeeTypeSelector.getCaffeineContent());
 
     }
 
-    public static int cupInput() {
-        System.out.println("Enter the amount of cups you drank today:");
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextInt();
+    private static int calculateJunkieIndex(int cupAmount, int[] coffeeCups, double[] caffeineContent) {
+
+        double totalCoffeinContent = getTotalCoffeinContent(coffeeCups, caffeineContent);
+
+        double rawIndex = ((cupAmount * 10 * 2) + totalCoffeinContent) / 1000;
+        double scaledIndex = Math.min(Math.max(rawIndex * 10, 1), 10);
+        //System.out.printf("scaledIndex: %d %n", (int)scaledIndex);
+
+        return (int)scaledIndex;
+
     }
-    public static int coffeeTypeInput() {
-        System.out.println("Select the type of coffee you drank today:");
-        Scanner scanner = new Scanner(System.in);
-        for (int i = 0; i < coffeeTypes.length; i++) {
-            System.out.printf("press %d for %s %n", i+1, coffeeTypes[i]);
+
+    private static double getTotalCoffeinContent(int[] coffeeCups, double[] caffeineContent) {
+        double totalCoffeinContent = 0;
+        for (int i = 0; i < caffeineContent.length; i++) {
+            totalCoffeinContent += (caffeineContent[i] * coffeeCups[i]);
+            //System.out.printf("Total Koffeingehalt: %f %n", totalCoffeinContent);
         }
-        int inputChoice = scanner.nextInt();
-        return inputChoice;
+        return totalCoffeinContent;
     }
+
 
 }
 
