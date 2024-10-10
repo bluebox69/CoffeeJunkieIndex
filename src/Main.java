@@ -21,8 +21,9 @@ public class Main {
 
 
     }
+
     private static void printResult(int junkieIndex) {
-        switch (junkieIndex){
+        switch (junkieIndex) {
             case 1:
                 System.out.println("Junkie-Index: 1 You are very sober, Good!");
                 break;
@@ -66,9 +67,7 @@ public class Main {
         double rawIndex = ((cupAmount * 10 * 2) + totalCoffeinContent) / 1000;
         double scaledIndex = Math.min(Math.max(rawIndex * 10, 1), 10);
         //System.out.printf("scaledIndex: %d %n", (int)scaledIndex);
-
-        return (int)scaledIndex;
-
+        return (int) scaledIndex;
     }
 
     private static double getTotalCoffeinContent(int[] coffeeCups, double[] caffeineContent) {
