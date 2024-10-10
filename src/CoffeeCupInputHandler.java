@@ -6,7 +6,7 @@ public class CoffeeCupInputHandler {
         int inputValue = 0;
         Scanner scanner = new Scanner(System.in);
 
-        while (true){
+        while (true) {
             System.out.println("Enter the amount of cups you drank today:");
             try {
                 inputValue = scanner.nextInt();
@@ -15,8 +15,7 @@ public class CoffeeCupInputHandler {
                 } else {
                     System.out.println("Impossible!! Try again");
                 }
-            }
-            catch (Exception e){
+            } catch (Exception e) {
                 System.out.println("Invalid Input!! Use only numbers! Try again.");
                 scanner.next();
             }
