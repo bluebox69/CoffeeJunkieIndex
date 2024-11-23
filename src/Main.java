@@ -63,7 +63,7 @@ public class Main {
     private static int calculateJunkieIndex(int cupAmount, int[] coffeeCups, double[] caffeineContent) {
 
         //Ungültige Äquivalenzklasse = cupAmount <0
-        //Custom return
+        // return
 
         double totalCoffeinContent = getTotalCoffeinContent(coffeeCups, caffeineContent);
 
