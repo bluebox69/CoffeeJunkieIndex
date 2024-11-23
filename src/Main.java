@@ -62,6 +62,9 @@ public class Main {
 
     private static int calculateJunkieIndex(int cupAmount, int[] coffeeCups, double[] caffeineContent) {
 
+        //Ungültige Äquivalenzklasse = cupAmount <0
+        //Custom return
+
         double totalCoffeinContent = getTotalCoffeinContent(coffeeCups, caffeineContent);
 
         double rawIndex = ((cupAmount * 10 * 2) + totalCoffeinContent) / 1000;
@@ -70,6 +73,8 @@ public class Main {
         return (int) scaledIndex;
     }
 
+    //Ungültige Äquivalenzklasse = coffeeCups <0 && Strings
+    //Array testen?!
     private static double getTotalCoffeinContent(int[] coffeeCups, double[] caffeineContent) {
         double totalCoffeinContent = 0;
         for (int i = 0; i < caffeineContent.length; i++) {

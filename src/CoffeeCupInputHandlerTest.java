@@ -1,3 +1,4 @@
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -7,7 +8,7 @@ import java.io.InputStream;
 import java.io.PrintStream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-//Testziel: werden die richtigen Fehler geworfen, wenn der InputValue -1, also die ungültige Equivalenzklasse.
+//Testziel: werden die richtigen Fehler geworfen, wenn der InputValue negative Ganzzahlen sind, also die ungültige Equivalenzklasse.
 public class CoffeeCupInputHandlerTest {
 
     @Test

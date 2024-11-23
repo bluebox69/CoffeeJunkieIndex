@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 public class CoffeeCupInputHandler {
 
+    //Gültige Äquivalenzklassen = 1 bis 5
+    //Ungültige Äquivalenzklassen = <=0, >=6
+    //Ungültige Äquivalenzklassen = Strings
+    //Custom return
     public int getCupInput() {
         int inputValue = 0;
         Scanner scanner = new Scanner(System.in);

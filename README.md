@@ -7,5 +7,5 @@ Eine kurze Darstellung über die Äquivalenzklassen des oder der Paramter einer 
 Es geht hier nicht um die Quantität der Testfälle! Sie sollen zeigen, dass Sie verstehen wie man methodisch sich dem Black-Box Testen nähert und wie man Unit-Testfälle schreibt. Eine gute Hand von unterschiedlicher Testfälle ist besser als eine vielzahl von gleichartigen Testfällen!
 
 -[ ] Darstellung der gültigen und ungültigen Äquivalenzklassen (gerne im Code als Kommentar)
--[ ] mind. 5 Testfälle, welche ein Ergebnis mittels "return"-Statement der Methode als Ergebnis liefern
--[ ] mind. 3 Testfälle welche eine Exception Testen. Von diesen müssen 2 eine eigene Exception (Custom-Exception) darstellen.
+-[ ] mind. 5 Testfälle, welche ein Ergebnis mittels "return"-Statement der Methode als Ergebnis liefern (Paul 2, Ricarda 2)
+-[ ] mind. 3 Testfälle welche eine Exception Testen. Von diesen müssen 2 eine eigene Exception (Custom-Exception) darstellen. (Paul 2 = eigene Exception 1x & 1x nur Exception-testing, Ricarda: 1x eigene Exception & 1x nur Exception)
