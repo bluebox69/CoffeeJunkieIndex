@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70584c3a-38c1-4d02-8787-b757cd1f2202" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoffeeCupInputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoffeeCupInputHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoffeeCupInputHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoffeeCupInputHandlerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CoffeeTypeSelectorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InvalidCoffeeTypeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InvalidCupNumberException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CoffeeTypeSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoffeeTypeSelector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +55,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Merging main",
     "last_opened_file_path": "/Users/karli/Desktop/FH Web Development/3.SE/Testing/CoffeeJunkieIndex",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -75,11 +74,20 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CoffeeCupInputHandlerTest">
+  <component name="RunManager" selected="JUnit.CoffeeTypeSelectorTest">
     <configuration name="CoffeeCupInputHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CoffeeYunkieIndex" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CoffeeCupInputHandlerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoffeeTypeSelectorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoffeeYunkieIndex" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CoffeeTypeSelectorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -104,16 +112,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.calculateJunkieIndex_mismatchedArrayLengths_shouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CoffeeYunkieIndex" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="calculateJunkieIndex_mismatchedArrayLengths_shouldThrowException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MainTest.calculateJunkieIndex_zeroCups_shouldReturnMinimumIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CoffeeYunkieIndex" />
       <option name="PACKAGE_NAME" value="" />
@@ -126,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CoffeeTypeSelectorTest" />
         <item itemvalue="JUnit.CoffeeCupInputHandlerTest" />
         <item itemvalue="JUnit.MainTest" />
         <item itemvalue="JUnit.MainTest.calculateJunkieIndex_highConsumption_shouldReturnMaximumIndex" />
         <item itemvalue="JUnit.MainTest.calculateJunkieIndex_zeroCups_shouldReturnMinimumIndex" />
-        <item itemvalue="JUnit.MainTest.calculateJunkieIndex_mismatchedArrayLengths_shouldThrowException" />
       </list>
     </recent_temporary>
   </component>
