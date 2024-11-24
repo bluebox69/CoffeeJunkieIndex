@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70584c3a-38c1-4d02-8787-b757cd1f2202" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/CoffeeTypeSelectorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InvalidCoffeeTypeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InvalidCupNumberException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CoffeeTypeSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoffeeTypeSelector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -71,58 +74,64 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="CoffeeYunkieIndex" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CoffeeCupAmountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CoffeeTypeSelectorTest.testValidCoffeeSelection">
+    <configuration name="CoffeeTypeSelectorTest.testInvalidCoffeeTypeThrowsCustomException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CoffeeYunkieIndex" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CoffeeCupAmountTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CoffeeCupAmountTest.testNonIntegerInputThrowsCustomException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CoffeeYunkieIndex" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CoffeeCupAmountTest" />
-      <option name="METHOD_NAME" value="testNonIntegerInputThrowsCustomException" />
+      <option name="MAIN_CLASS_NAME" value="CoffeeTypeSelectorTest" />
+      <option name="METHOD_NAME" value="testInvalidCoffeeTypeThrowsCustomException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CoffeeCupInputHandlerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CoffeeTypeSelectorTest.testInvalidCoffeeTypeThrowsCustomExceptionNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CoffeeYunkieIndex" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CoffeeCupInputHandlerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="CoffeeTypeSelectorTest" />
+      <option name="METHOD_NAME" value="testInvalidCoffeeTypeThrowsCustomExceptionNull" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CoffeeCupInputHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CoffeeTypeSelectorTest.testInvalidCupNumberThrowsExceptionCharacter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CoffeeYunkieIndex" />
-      <option name="PACKAGE_NAME" value="testing" />
-      <option name="MAIN_CLASS_NAME" value="testing.CoffeeCupInputHandlerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CoffeeTypeSelectorTest" />
+      <option name="METHOD_NAME" value="testInvalidCupNumberThrowsExceptionCharacter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoffeeTypeSelectorTest.testValidCoffeeSelection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoffeeYunkieIndex" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CoffeeTypeSelectorTest" />
+      <option name="METHOD_NAME" value="testValidCoffeeSelection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoffeeTypeSelectorTest.testValidCupNumberSelection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoffeeYunkieIndex" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CoffeeTypeSelectorTest" />
+      <option name="METHOD_NAME" value="testValidCupNumberSelection" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.CoffeeCupAmountTest.testNonIntegerInputThrowsCustomException" />
-        <item itemvalue="JUnit.CoffeeCupAmountTest" />
-        <item itemvalue="JUnit.CoffeeCupInputHandlerTest (1)" />
-        <item itemvalue="JUnit.CoffeeCupInputHandlerTest" />
+        <item itemvalue="JUnit.CoffeeTypeSelectorTest.testValidCoffeeSelection" />
+        <item itemvalue="JUnit.CoffeeTypeSelectorTest.testValidCupNumberSelection" />
+        <item itemvalue="JUnit.CoffeeTypeSelectorTest.testInvalidCoffeeTypeThrowsCustomExceptionNull" />
+        <item itemvalue="JUnit.CoffeeTypeSelectorTest.testInvalidCoffeeTypeThrowsCustomException" />
+        <item itemvalue="JUnit.CoffeeTypeSelectorTest.testInvalidCupNumberThrowsExceptionCharacter" />
       </list>
     </recent_temporary>
   </component>
