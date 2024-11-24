@@ -60,10 +60,25 @@ public class Main {
         }
     }
 
-    private static int calculateJunkieIndex(int cupAmount, int[] coffeeCups, double[] caffeineContent) {
+    /*
+    CupAmount
+    Gültige Äquivalenzklassen = CupAmount = 1
+    Gültige Äquivalenzklassen = CupAmount = 50
+    Ungültige Äquivalenzklassen = CupAmount = 0
+    Ungültige Äquivalenzklassen = CupAmount = 5 && coffeeCups !=5
+    Ungültige Äquivalenzklassen = CupAmount = -1
+     */
+    static int calculateJunkieIndex(int cupAmount, int[] coffeeCups, double[] caffeineContent) {
 
-        //Ungültige Äquivalenzklasse = cupAmount <0
-        // return
+        // Ungültige Äquivalenzklasse: cupAmount < 0
+        if (cupAmount <= 0) {
+            throw new IllegalArgumentException("The number of cups cannot be 0 or negative.");
+        }
+
+        // Ungültige Äquivalenzklasse: Kaffeeanzahl stimmt nicht mit den Koffeinwerten überein
+        if (coffeeCups.length != caffeineContent.length) {
+            throw new IllegalArgumentException("Mismatch between coffee cups and caffeine content arrays.");
+        }
 
         double totalCoffeinContent = getTotalCoffeinContent(coffeeCups, caffeineContent);
 
@@ -73,8 +88,6 @@ public class Main {
         return (int) scaledIndex;
     }
 
-    //Ungültige Äquivalenzklasse = coffeeCups <0 && Strings
-    //Array testen?!
     private static double getTotalCoffeinContent(int[] coffeeCups, double[] caffeineContent) {
         double totalCoffeinContent = 0;
         for (int i = 0; i < caffeineContent.length; i++) {
